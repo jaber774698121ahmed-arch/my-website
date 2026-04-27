@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تجربة الرائحة التفاعلية | وجد للعطور</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">WAJD<span>وجد للعطور</span></a>
+      <div class="nav-links">
+        <a href="../index.html">الرئيسية</a>
+        <a href="collection.html">المجموعة</a>
+        <a href="offers.html">العروض</a>
+        <a href="advisor.html">المستشار الذكي</a>
+        <a href="blog.html">المدونة</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="order.html" class="btn" style="padding:10px 25px;">اطلب الآن</a>
+      </div>
+      <div class="menu-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>تجربة الرائحة <span class="gold-text">التفاعلية</span></h1>
+      <p style="font-size:1.1rem; margin-top:10px;">استكشف عالم العطور بطريقة تفاعلية فريدة</p>
+      <div class="breadcrumb" style="margin-top:15px;">
+        <a href="../index.html">الرئيسية</a>
+        <span>/</span>
+        <span>تجربة الرائحة</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="experience-slider fade-in">
+        <h2 style="margin-bottom:10px;">حرّك الشريط لاستكشاف <span class="gold-text">الروائح</span></h2>
+        <p>كل رائحة تأخذك في رحلة حسية مختلفة</p>
+
+        <input type="range" class="scent-slider" id="scentSlider" min="0" max="99" value="0">
+
+        <div class="scent-display" id="scentDisplay" style="background: linear-gradient(135deg, #3E2723, #1C1C1C);">
+          <h3 id="scentName" style="color:#8D6E63;">عود</h3>
+          <p id="scentDesc">رائحة العود الكمبودي الأصيل، دافئة وعميقة تنقلك إلى عالم الشرق الساحر</p>
+          <div style="margin-top:25px;">
+            <a href="collection.html" class="btn">استكشف عطور هذه الفئة</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scent Categories -->
+      <div style="margin-top:80px;">
+        <div class="section-title fade-in">
+          <h2>عائلات <span class="gold-text">العطور</span></h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+          <div class="value-card fade-in">
+            <div class="icon">🪵</div>
+            <h3>عود</h3>
+            <p>دافئ وعميق وأصيل</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="icon">🤍</div>
+            <h3>مسك</h3>
+            <p>ناعم ونقي وأنيق</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="icon">🌹</div>
+            <h3>ورد</h3>
+            <p>رومانسي وأنثوي</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="icon">🔥</div>
+            <h3>عنبر</h3>
+            <p>غني وحسي ودافئ</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="icon">✨</div>
+            <h3>زعفران</h3>
+            <p>فاخر وملكي وتوابلي</p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="icon">🌿</div>
+            <h3>صندل</h3>
+            <p>كريمي وهادئ ومريح</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 وجد للعطور | WAJD PERFUMES. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966500000000" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

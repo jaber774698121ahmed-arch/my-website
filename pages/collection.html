@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المجموعة الفاخرة | وجد للعطور</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">WAJD<span>وجد للعطور</span></a>
+      <div class="nav-links">
+        <a href="../index.html">الرئيسية</a>
+        <a href="collection.html">المجموعة</a>
+        <a href="offers.html">العروض</a>
+        <a href="advisor.html">المستشار الذكي</a>
+        <a href="blog.html">المدونة</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="order.html" class="btn" style="padding:10px 25px;">اطلب الآن</a>
+      </div>
+      <div class="menu-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>المجموعة <span class="gold-text">الفاخرة</span></h1>
+      <div class="breadcrumb">
+        <a href="../index.html">الرئيسية</a>
+        <span>/</span>
+        <span>المجموعة الفاخرة</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="filters-bar fade-in">
+        <div class="filters-grid">
+          <!-- Dropdown -->
+          <div class="filter-group">
+            <label>التصنيف</label>
+            <select>
+              <option value="">الكل</option>
+              <option>رجالي</option>
+              <option>نسائي</option>
+              <option>شرقي</option>
+              <option>عود</option>
+              <option>يونيسكس</option>
+              <option>حصري</option>
+            </select>
+          </div>
+          <!-- Sort -->
+          <div class="filter-group">
+            <label>ترتيب حسب</label>
+            <select>
+              <option>الأكثر مبيعاً</option>
+              <option>الأعلى تقييماً</option>
+              <option>الأحدث</option>
+              <option>السعر: من الأقل</option>
+              <option>السعر: من الأعلى</option>
+            </select>
+          </div>
+          <!-- Price Range -->
+          <div class="filter-group">
+            <label>نطاق السعر: <span id="priceValue">١٬٠٠٠ ر.ي</span></label>
+            <input type="range" id="priceRange" min="50" max="2000" value="1000" step="50">
+          </div>
+        </div>
+
+        <!-- Size Radio -->
+        <div class="filter-group" style="margin-top:20px;">
+          <label>الحجم</label>
+          <div class="radio-group">
+            <label><input type="radio" name="size" value="all" checked> الكل</label>
+            <label><input type="radio" name="size" value="30"> 30ml</label>
+            <label><input type="radio" name="size" value="50"> 50ml</label>
+            <label><input type="radio" name="size" value="100"> 100ml</label>
+            <label><input type="radio" name="size" value="200"> 200ml</label>
+          </div>
+        </div>
+
+        <!-- Ingredients Checkbox -->
+        <div class="filter-group" style="margin-top:15px;">
+          <label>المكونات</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" value="musk"> مسك</label>
+            <label><input type="checkbox" value="amber"> عنبر</label>
+            <label><input type="checkbox" value="oud"> عود</label>
+            <label><input type="checkbox" value="vanilla"> فانيلا</label>
+            <label><input type="checkbox" value="saffron"> زعفران</label>
+            <label><input type="checkbox" value="rose"> ورد</label>
+            <label><input type="checkbox" value="woody"> خشبي</label>
+            <label><input type="checkbox" value="citrus"> حمضيات</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <span class="badge">الأكثر مبيعاً</span>
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop" alt="عود الملوك">
+          </div>
+          <div class="card-body">
+            <h3>عود الملوك</h3>
+            <p>عطر شرقي فاخر | 100ml</p>
+            <div class="price">٤٥٠ ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1594035910387-fbd1a485b12e?w=400&h=500&fit=crop" alt="ليلة ذهبية">
+          </div>
+          <div class="card-body">
+            <h3>ليلة ذهبية</h3>
+            <p>عطر مسائي | 100ml</p>
+            <div class="price">٣٨٠ ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <span class="badge">جديد</span>
+            <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=500&fit=crop" alt="نسمة الورد">
+          </div>
+          <div class="card-body">
+            <h3>نسمة الورد</h3>
+            <p>عطر نسائي | 50ml</p>
+            <div class="price">٣٢٠ ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400&h=500&fit=crop" alt="صندل الخليج">
+          </div>
+          <div class="card-body">
+            <h3>صندل الخليج</h3>
+            <p>عطر خشبي | 100ml</p>
+            <div class="price">٤٠٠ ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <span class="badge">حصري</span>
+            <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=400&h=500&fit=crop" alt="مسك الليل">
+          </div>
+          <div class="card-body">
+            <h3>مسك الليل</h3>
+            <p>عطر يونيسكس | 100ml</p>
+            <div class="price">20000 ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1595425964272-fc617fa14e02?w=400&h=500&fit=crop" alt="زعفران ملكي">
+          </div>
+          <div class="card-body">
+            <h3>زعفران ملكي</h3>
+            <p>عطر شرقي | 200ml</p>
+            <div class="price">25000 ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=400&h=500&fit=crop" alt="عنبر الشرق">
+          </div>
+          <div class="card-body">
+            <h3>عنبر الشرق</h3>
+            <p>عطر رجالي | 100ml</p>
+            <div class="price">25000 ر.ي</div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="card-img">
+            <span class="badge">عرض خاص</span>
+            <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?w=400&h=500&fit=crop" alt="فانيلا سوداء">
+          </div>
+          <div class="card-body">
+            <h3>فانيلا سوداء</h3>
+            <p>عطر نسائي | 50ml</p>
+            <div class="price">30000 ر.ي <span class="old-price">٣٥٠ ر.س</span></div>
+            <a href="product.html" class="btn" style="margin-top:15px; padding:8px 20px; font-size:0.9rem;">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>WAJD | وجد للعطور</h4>
+          <p>الفخامة ليست اختياراً، بل أسلوب حياة.</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <a href="collection.html">المجموعة الفاخرة</a>
+          <a href="offers.html">العروض الخاصة</a>
+          <a href="advisor.html">المستشار الذكي</a>
+          <a href="contact.html">تواصل معنا</a>
+        </div>
+        <div class="footer-col">
+          <h4>النشرة البريدية</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <button type="submit">اشترك</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 وجد للعطور | WAJD PERFUMES. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966500000000" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

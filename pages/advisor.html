@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المستشار الذكي | وجد للعطور</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">WAJD<span>وجد للعطور</span></a>
+      <div class="nav-links">
+        <a href="../index.html">الرئيسية</a>
+        <a href="collection.html">المجموعة</a>
+        <a href="offers.html">العروض</a>
+        <a href="advisor.html">المستشار الذكي</a>
+        <a href="blog.html">المدونة</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="order.html" class="btn" style="padding:10px 25px;">اطلب الآن</a>
+      </div>
+      <div class="menu-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>مستشار العطر <span class="gold-text">الذكي</span></h1>
+      <p style="font-size:1.1rem; margin-top:10px;">دع الذكاء الاصطناعي يختار لك عطرك المثالي</p>
+      <div class="breadcrumb" style="margin-top:15px;">
+        <a href="../index.html">الرئيسية</a>
+        <span>/</span>
+        <span>المستشار الذكي</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advisor Form -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="advisor-form fade-in">
+        <form id="advisorForm">
+          <div class="form-group">
+            <label>الفئة العمرية</label>
+            <select required>
+              <option value="">اختر فئتك العمرية</option>
+              <option>18 - 25 سنة</option>
+              <option>26 - 35 سنة</option>
+              <option>36 - 45 سنة</option>
+              <option>46 - 55 سنة</option>
+              <option>أكثر من 55 سنة</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>نمط الشخصية</label>
+            <select required>
+              <option value="">اختر نمط شخصيتك</option>
+              <option>كلاسيكي أنيق</option>
+              <option>عصري جريء</option>
+              <option>هادئ رومانسي</option>
+              <option>رياضي نشيط</option>
+              <option>غامض ساحر</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>نوع المناسبة</label>
+            <select required>
+              <option value="">اختر نوع المناسبة</option>
+              <option>يومي / عمل</option>
+              <option>مناسبات رسمية</option>
+              <option>سهرات ومساء</option>
+              <option>مناسبات خاصة / أعراس</option>
+              <option>إهداء</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>درجة الثبات المطلوبة</label>
+            <select required>
+              <option value="">اختر درجة الثبات</option>
+              <option>خفيف (2-4 ساعات)</option>
+              <option>متوسط (4-8 ساعات)</option>
+              <option>قوي (8-12 ساعة)</option>
+              <option>فائق الثبات (+12 ساعة)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>نوع الرائحة المفضل</label>
+            <select required>
+              <option value="">اختر نوع الرائحة</option>
+              <option>شرقي / عود</option>
+              <option>زهري / ورد</option>
+              <option>خشبي / صندل</option>
+              <option>حمضيات / منعش</option>
+              <option>مسك / عنبر</option>
+              <option>توابل / زعفران</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>الوقت / الموسم</label>
+            <select required>
+              <option value="">اختر الوقت المناسب</option>
+              <option>صيفي / نهاري</option>
+              <option>شتوي / دافئ</option>
+              <option>مسائي</option>
+              <option>لجميع الأوقات</option>
+            </select>
+          </div>
+
+          <div style="text-align:center; margin-top:30px;">
+            <button type="submit" class="btn btn-filled" style="font-size:1.1rem; padding:16px 50px;">اقترح لي عطري المثالي</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- AI Result -->
+      <div class="ai-result" id="aiResult">
+        <div style="font-size:3rem; margin-bottom:15px;">✨</div>
+        <h2>عطرك المثالي هو:</h2>
+        <div class="gold-line"></div>
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=300&h=400&fit=crop" alt="العطر المقترح">
+        <h3 id="resultName" style="font-size:1.8rem; color:var(--gold); margin-bottom:10px;">عود الملوك</h3>
+        <p id="resultDesc" style="max-width:500px; margin:0 auto 20px;">وصف العطر</p>
+        <div id="resultPrice" style="font-size:1.5rem; color:var(--gold); font-weight:700; font-family:var(--font-heading); margin-bottom:25px;">٤٥٠ ر.س</div>
+        <a href="order.html" class="btn btn-filled">اطلب الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 وجد للعطور | WAJD PERFUMES. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966500000000" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
